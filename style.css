@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,500;1,500&family=Outfit:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,800;1,800&family=Outfit:wght@700&display=swap');
+
+:root {
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray-500: hsl(0, 0%, 42%);
+  --color-gray-950: hsl(0, 0%, 7%);
+
+  --spacing-24px: 24px;
+  --spacing-12px: 12px;
+  --spacing-8px: 8px;
+  --spacing-4px: 4px;
+}
+
+* {
+  font-family: Figtree, Arial;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.figtree-medium-14px,
+.figtree-medium-16px,
+.figtree-extra-bold-14px,
+.figtree-extra-bold-24px {
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.figtree-medium-14px {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.figtree-medium-16px {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.figtree-extra-bold-14px {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.figtree-extra-bold-24px {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+/* 
+
+  Using display flex to center blog-card
+
+*/
+
+body {
+  background-color: var(--color-yellow);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-card {
+  background-color: var(--color-white);
+  width: 384px;
+  border-radius: 20px;
+  padding: var(--spacing-24px);
+  box-shadow: 8px 8px 0px rgb(0, 0, 0);
+}
+
+
+/* 
+
+  Using position absolute to center blog-card
+
+*/
+
+/*
+
+body {
+  background-color: var(--color-yellow);
+}
+
+.blog-card {
+  background-color: var(--color-white);
+  width: 384px;
+  border-radius: 20px;
+  padding: var(--spacing-24px);
+  box-shadow: 8px 8px 0px rgb(0, 0, 0);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  
+*/
+
+@media (max-width: 375px) {
+  .blog-card {
+    width: 327px;
+  }
+}
+
+.blog-thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  margin-bottom: var(--spacing-24px);
+}
+
+@media (max-width: 375px) {
+  .blog-thumbnail {
+    width: 100%;
+  }
+  
+}
+
+.category,
+.published-date,
+.blog-title {
+  color: var(--color-gray-950);
+  margin-bottom: var(--spacing-12px);
+}
+
+.category {
+  background-color: var(--color-yellow);
+  padding: var(--spacing-4px) var(--spacing-12px);
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.blog-title:hover,
+.blog-title:active {
+  color: var(--color-yellow);
+  cursor: pointer;
+}
+
+.blog-desc {
+  color: var(--color-gray-500);
+}
+
+.author {
+  margin-top: var(--spacing-24px);
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.author .picture {
+  width: 2rem;
+  height: 2rem;
+  margin-right: var(--spacing-12px);
+}
+
+.author .name {
+  color: var(--color-gray-950);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
