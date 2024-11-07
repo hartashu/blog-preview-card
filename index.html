@@ -5,25 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Blog preview card</title>
-
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-  <main>
-    <section class="blog-card">
-      <img class="blog-thumbnail" src="assets/images/illustration-article.svg" alt="Blog Thumbnail">
-      <div class="category figtree-extra-bold-14px">Learning</div>
-      <div class="published-date figtree-medium-14px">Published 21 Dec 2023</div>
-      <h1 class="blog-title figtree-extra-bold-24px">HTML & CSS foundations</h1>
-      <div class="blog-desc figtree-medium-16px">These languages are the backbone of every website, defining structure, content, and presentation.</div>
-      <div class="author">
-        <img class="picture" src="assets/images/image-avatar.webp" alt="Author Picture">
-        <div class="name figtree-extra-bold-14px">Greg Hooper</div>
+  <main class="main">
+    <article class="card">
+      <div class="card__media">
+        <picture>
+          <img src="assets/images/illustration-article.svg" alt="HTML & CSS illustration image"
+            class="card__img">
+        </picture>
       </div>
-    </section>
+      <div class="card__content">
+        <p class="card__ribbon">Learning</p>
+        <p class="card__date">Published 21 Dec 2023</p>
+        <h2 class="card__title">HTML & CSS foundations</h2>
+        <p class="card__desc">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      </div>
+      <div class="card__author">
+        <img src="assets/images/image-avatar.webp" alt="Greg Hooper profile picture"
+          class="card__author-pic">
+        <p class="card__author-name">Greg Hooper</p>
+      </div>
+    </article>
   </main>
   
   <footer>
@@ -32,6 +38,5 @@
       Coded by <a href="#">Harta Shuwanto</a>.
     </div>
   </footer>
-  
 </body>
 </html>
