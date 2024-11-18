@@ -1,6 +1,6 @@
 # Frontend Mentor - Blog preview card solution
 
-This is a solution to the [Blog preview card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Blog preview card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS).
 
 ## Table of contents
 
@@ -37,6 +37,7 @@ Users should be able to:
 
 ### Built with
 
+- Using BEM naming convention
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
@@ -48,16 +49,18 @@ Users should be able to:
 - Centering card horizontally and vertically.
 - Custom properties, CSS units, transform property, position property, and so on.
 - Proper semantic HTML (still a lot to learn about this).
-- CSS Methodology (BEM - Block Element Modifier).
+- CSS naming convention (BEM - Block Element Modifier).
 
 ### Continued development
 
-- Semantics HTML and accessibility.
-- CSS BEM (Block Element Modifier).
-- The proper way to make utility classes in CSS.
-- Make modular, sustain, and maintain-able code to work with a team.
+- Semantics HTML and accessibility
+- Use BEM naming convention more efficiently
+- Make a proper utility classes in CSS
+- Make a modular, sustain, and maintain-able code to work with a team
 
 ### Useful resources
+
+Here I listed all resources I learned from through out my journey.
 
 Getting started with HTML & CSS:
 - [HTML & CSS Course by SuperSimpleDev](https://youtu.be/G3e-cpL7ofc?si=4xxA1hw_5mU_9-aX)
